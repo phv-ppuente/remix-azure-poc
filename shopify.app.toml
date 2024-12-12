@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "bfb52c23f3c48ca869552d08047e73d3"
+application_url = "https://nikon-possession-picks-reconstruction.trycloudflare.com"
+embedded = true
+name = "post-purchase-remix"
+handle = "post-purchase-remix"
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://nikon-possession-picks-reconstruction.trycloudflare.com/auth/callback",
+  "https://nikon-possession-picks-reconstruction.trycloudflare.com/auth/shopify/callback",
+  "https://nikon-possession-picks-reconstruction.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "phv-patrick-sandbox.myshopify.com"
+automatically_update_urls_on_dev = true
