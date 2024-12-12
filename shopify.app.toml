@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "bfb52c23f3c48ca869552d08047e73d3"
-application_url = "https://nikon-possession-picks-reconstruction.trycloudflare.com"
+application_url = "https://TODO"
 embedded = true
 name = "post-purchase-remix"
 handle = "post-purchase-remix"
@@ -19,9 +19,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://nikon-possession-picks-reconstruction.trycloudflare.com/auth/callback",
-  "https://nikon-possession-picks-reconstruction.trycloudflare.com/auth/shopify/callback",
-  "https://nikon-possession-picks-reconstruction.trycloudflare.com/api/auth/callback"
+  "https://Remix-App-POC.azurewebsites.net/auth/callback",
+  "https://Remix-App-POC.azurewebsites.net/auth/shopify/callback",
+  "https://Remix-App-POC.azurewebsites.net/api/auth/callback"
 ]
 
 [pos]
@@ -30,3 +30,4 @@ embedded = false
 [build]
 dev_store_url = "phv-patrick-sandbox.myshopify.com"
 automatically_update_urls_on_dev = true
+include_config_on_deploy = true
